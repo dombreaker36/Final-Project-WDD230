@@ -36,50 +36,63 @@
                     <h2><span class="light">Temple </span> Inn & Suites</h2>
                 </div>
                 <ul class="navul">
-                    <li><a href="index.html" class="current-page">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="temple.html">Temple</a></li>
                     <li><a href="reservation.html">Reservation</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="services.html" class="current-page">Services</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <section class="bg-image">
-                <picture class="bg-image1">
-                    <source media="(min-width: 1000px)" srcset="img/large.jpg" 1x>
-                    <source media="(min-width: 550px)" srcset="img/imgC.jpg" 1x>
-                    <img src="img/imgC.jpg" alt="my-image">
-                </picture>
-                <a href="#" class="btn"><span class="light">Book</span>Now</a>
-            </section>
-            <section class="showcase-content">
-                <div class="showcaseimg">
-                    <img src="https://assets.ldscdn.org/e8/81/e88192665112ce3930cb4601bda1c716f0b9126a/portland_oregon_temple.jpeg" alt="myimage">
-                </div>
-                <div class="showcase-desc">
-                    <h1><span class="light">PortLand </span> Oregon Temple</h1>
-                    <h3>Temple Closures</h3>
-                    <ul>
-                        <h3><span class="light">2022</span></h3>
-                        <li>Monday, 18 july 2022-Monday, 15 August 2022</li>
-                        <li>Saturday, 1 October 2022</li>
-                        <li>Wednesday, 23 November 2022 (Limited Operations)</li>
-                    </ul>
-                    <h2><span class="light">Contact </span> or Find Us</h2>
-                    <p>Adress: 13600 Kruse Oaks Blvd Lake Oswego OR 97035-8602 United States</p>
-                    <p>Telephone: (1) 503-639-7066</p>
-                </div>
-                <div class="current-weather-card">
-                    <h2>Weather Status in Bethesda</h2>
-                    <p class="current-temp"></p>
-                    <figure>
-                        <img src="" alt="" id="weather-icon" />
-                        <figcaption></figcaption>
-                    </figure>
-                    <p class="humidity"></p>
-                    <p class="weather-desc"></p>
-                </div>
-            </section>
+        <main class="main-service-area">
+            <div class="amenities">
+                <h1>Free Amenities</h1>
+                <img src="img/imgB.jpg" alt="free">
+                <ul>
+                    <li>Free BreakFast</li>
+                    <li>Exercise/Workout</li>
+                    <li>Parking</li>
+                    <li>Indoor Pool</li>
+                    <li>Wifi high-speed internet access and smart TVs</li>
+                    <li>Temple shuttle</li>
+                    <li>Family history consultation and family ordinance Card Service</li>
+                </ul>
+            </div>
+
+            <div class="reception">
+                <h1>Special Services</h1>
+                <img src="img/imgG.jpg" alt="reception img">
+                <ul>
+                    <li>Low cost, short term babysitting services for the children of patrons, and a super fun PLAY ROOM!</li>
+                    <li>Wedding reception hall that can be easily customized with a simple catering menu and kitchen access for food preparation and serving</li>
+                    <li>Business center</li>
+                </ul>
+            </div>
+
+            <div class="fttm">
+                <h1>For Full Time Misionaries</h1>
+                <img src="img/imgH.jpg" alt="img">
+                <ul>
+                    <li>Business center that supports family search and ordinance work</li>
+                    <li>Free access to changing rooms and bathroom facilities for temple patrons who have traveled far and need to change to and from church clothes</li>
+                    <li>Long term stay accomodations in kithcenette suites for full-time temple missionaries</li>
+
+                </ul>
+
+                <form class="contact-form">
+                    <fieldset>
+                        <legend>Contact Us</legend>
+                        <label for="name">
+                      <label for="name">Name:</label>
+                        <input type="text" id="name" placeholder="Enter Name">
+                        </label>
+                        <label for="email">
+                      <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Enter Email">
+                        </label>
+                        <input type="submit" value="Submit" class="submitbtn">
+                    </fieldset>
+                </form>
+            </div>
         </main>
         <footer class="main-footer">
             <div class="footer">

@@ -1,4 +1,446 @@
-/* .card img {
-    width: 100px;
-    height: 100px;
-} */
+@media only screen and (max-width:768px) and (min-width: 600px) {
+    @import url('https://fonts.googleapis.com/css2?family=Kurale&family=Lato:wght@100&family=Roboto:wght@100&display=swap');
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background: #011627;
+        font-family: 'robot', sans-serif;
+    }
+    li {
+        list-style: none;
+    }
+    header {
+        font-family: 'Lato', sans-serif;
+    }
+    /* Utility */
+    .light {
+        color: #30C5FF;
+        font-family: 'Kurale', serif;
+    }
+    /* First Head */
+    .container {
+        max-width: 960px;
+    }
+    .commun-nav {
+        display: none;
+    }
+    .navbar {
+        display: flex;
+        padding: 12px;
+        background: #ffff;
+    }
+    .navbar ul {
+        display: flex;
+        text-align: center;
+        margin: auto;
+    }
+    .navbar ul li {
+        padding: 10px;
+    }
+    .navbar ul li a {
+        text-decoration: none;
+        color: #333;
+    }
+    .navbar ul li a:hover {
+        color: #fff;
+        background-color: #30C5FF;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    .current-page {
+        color: #fff;
+        background-color: #30C5FF;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    .bg-image img {
+        height: 100vh;
+        width: 97vw;
+        opacity: 0.5;
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        bottom: 200px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 40px;
+    }
+    .btn:hover {
+        color: #30C5FF;
+    }
+    .showcase-content {
+        display: block;
+        margin-top: -40px;
+    }
+    .showcaseimg img {
+        height: 500px;
+        width: 659px;
+    }
+    .showcase-desc {
+        background: #0f222a;
+        color: #fff;
+        padding: 10px;
+    }
+    .showcase-desc h1 {
+        text-align: center;
+    }
+    .showcase-desc p {
+        padding: 5px;
+        line-height: 1.7rem;
+    }
+    .showcase-desc ul h3 {
+        line-height: 1.7rem;
+    }
+    .showcase-desc li {
+        padding: 10px;
+    }
+    .showcase-desc h2 {
+        text-align: center;
+        padding: 5px;
+    }
+    .current-weather-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 600px;
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+        color: #235789;
+        background-color: #fff;
+    }
+    .main-footer {
+        display: block;
+        padding: 5px;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    }
+    .footer {
+        display: flex;
+        padding: 10px;
+    }
+    .footer a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px;
+        color: rgb(131, 58, 180);
+        color: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(253, 100, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    }
+    .footer p {
+        padding: 5px;
+        color: #fff;
+        margin: auto;
+    }
+    .footer h2 {
+        color: rgb(63, 94, 251);
+        color: radial-gradient(circle, rgba(63, 94, 251, 1) 3%, rgba(252, 70, 107, 1) 95%);
+    }
+    .footer a:hover {
+        color: #30C5FF;
+    }
+    .form-footer input {
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        outline-color: #30C5FF;
+        outline-width: 2px;
+    }
+    .button {
+        background: #235789;
+        color: #fff;
+    }
+    .button:hover {
+        background: rgb(131, 58, 180);
+        background: radial-gradient(circle, rgba(131, 58, 180, 1) 0%, rgba(253, 100, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    }
+    .fa-map-pin {
+        font-size: 20px;
+        color: #9A031E;
+    }
+    .card {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 5px;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        padding: 1rem;
+    }
+    .box-1 {
+        background-color: #fff;
+        color: #05386B;
+        padding: 10px;
+        margin-right: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 0 5px #333;
+    }
+    .card img {
+        width: 100px;
+        height: 100px;
+    }
+    .box-1 img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        height: 200px;
+        width: 200px;
+        border-radius: 7px;
+    }
+    .box-1 p {
+        line-height: 1.7em;
+        color: #011627;
+        text-align: center;
+    }
+    .box-1 h1 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .services {
+        border-bottom: 1px solid #011627;
+    }
+    .services button {
+        display: flex;
+        padding: 8px;
+        border: none;
+        background: none;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-size: 15px;
+        color: #011627;
+        font-weight: bold;
+    }
+    .services ul {
+        padding: 10px;
+        font-size: 12px;
+        line-height: 1.7em;
+    }
+    .services ul {
+        display: none;
+    }
+    .services ul.open {
+        display: block;
+    }
+    .services ul li {
+        list-style: circle;
+        margin-left: 10px;
+    }
+    .history {
+        border-bottom: 1px solid #011627;
+    }
+    .history button {
+        display: flex;
+        padding: 8px;
+        border: none;
+        background: none;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-size: 15px;
+        color: #011627;
+        font-weight: bold;
+    }
+    .history ul {
+        line-height: 1.7em;
+        text-align: center;
+        font-size: 12px;
+        display: none;
+    }
+    .history ul {
+        display: none;
+    }
+    .history ul.open {
+        display: block;
+    }
+    .closure {
+        border-bottom: 1px solid #011627;
+    }
+    .closure button {
+        display: flex;
+        padding: 8px;
+        border: none;
+        background: none;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        font-size: 15px;
+        color: #011627;
+        font-weight: bold;
+    }
+    .closure ul {
+        line-height: 1.7em;
+        text-align: center;
+        font-size: 12px;
+    }
+    .closure ul {
+        display: none;
+    }
+    .closure ul.open {
+        display: block;
+    }
+    .history button:hover {
+        color: #30C5FF;
+    }
+    .closure button:hover {
+        color: #30C5FF;
+    }
+    .services button:hover {
+        color: #30C5FF;
+    }
+    .main-reserve {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .reserve-form {
+        display: block;
+        border-radius: 5px;
+        max-width: 600px;
+        background: #fff;
+        color: #05386B;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .reserve-form input {
+        padding: 10px;
+        border-radius: 7px;
+        outline-color: #30C5FF;
+        border: 1px solid #235789;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #number {
+        display: block;
+        width: 10%;
+    }
+    .roomtype {
+        display: flex;
+    }
+    .roomtype input {
+        margin-left: 5px;
+        padding: 5px;
+    }
+    #acc {
+        display: block;
+        width: 100%;
+        height: 100px;
+        margin-top: 10px;
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid #235789;
+        outline-color: #30C5FF;
+        font-family: 'roboto', sans-serif;
+    }
+    .submitbtn {
+        margin: 10px 0;
+        background: #30C5FF;
+        color: #fff;
+        border: none;
+    }
+    .submitbtn:hover {
+        background: #05386B;
+    }
+    .reserve-image {
+        display: block;
+    }
+    .hamburger {
+        display: none;
+    }
+    .reserve-image img {
+        display: block;
+        width: 100%;
+        height: 650px;
+        border-radius: 360px;
+        padding: 5px;
+        opacity: 0.8;
+    }
+    .main-service-area img {
+        width: 100px;
+        height: 100px;
+    }
+    .main-service-area {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 7px;
+        padding: 10px;
+    }
+    .amenities {
+        display: block;
+        grid-column: 1;
+        background: #fff;
+        border-radius: 5px;
+        color: #011627;
+        padding: 10px;
+        text-align: center;
+    }
+    .amenities ul {
+        text-align: left;
+        line-height: 1.7em;
+    }
+    .amenities img {
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+    }
+    .reception {
+        grid-column: 2;
+        padding: 10px;
+        background: #333;
+        border-radius: 5px;
+        color: orange;
+        grid-row: 2;
+        text-align: center;
+    }
+    .reception ul {
+        text-align: left;
+        color: #fff;
+        line-height: 1.7em;
+        list-style: circle;
+    }
+    .reception img {
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+        padding: 5px;
+        ;
+    }
+    .fttm {
+        grid-column: 3;
+        padding: 10px;
+        background: #05386B;
+        border-radius: 5px;
+        color: orange;
+    }
+    .fttm img {
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .fttm ul {
+        line-height: 1.7em;
+        text-align: left;
+        color: #fff;
+    }
+    .fttm .contact-form {
+        padding: 10px;
+    }
+    .fttm .contact-form input {
+        display: block;
+        padding: 6px;
+        border: none;
+        border-radius: 7px;
+    }
+    fieldset {
+        padding: 5px;
+    }
+    .contact-form label {
+        margin-top: 10px;
+    }
+}

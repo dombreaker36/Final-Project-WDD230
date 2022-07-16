@@ -19,6 +19,9 @@
         max-width: 1960px;
     }
     /* Utility */
+    .hamburger {
+        display: none;
+    }
     .light {
         color: #30C5FF;
         font-family: 'Kurale', serif;
@@ -207,6 +210,7 @@
         background-color: #fff;
         color: #05386B;
         padding: 10px;
+        margin-right: 10px;
         border-radius: 5px;
         box-shadow: 0 0 0 5px #333;
     }
@@ -323,5 +327,152 @@
     }
     .services button:hover {
         color: #30C5FF;
+    }
+    .main-reserve {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+    }
+    .reserve-form {
+        display: block;
+        grid-column: 1;
+        border-radius: 5px;
+        max-width: 600px;
+        background: #fff;
+        color: #05386B;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .reserve-form input {
+        padding: 10px;
+        border-radius: 7px;
+        outline-color: #30C5FF;
+        border: 1px solid #235789;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #number {
+        display: block;
+        width: 10%;
+    }
+    .roomtype {
+        display: flex;
+    }
+    .roomtype input {
+        margin-left: 5px;
+        padding: 5px;
+    }
+    #acc {
+        display: block;
+        width: 100%;
+        height: 100px;
+        margin-top: 10px;
+        border-radius: 5px;
+        padding: 10px;
+        border: 1px solid #235789;
+        outline-color: #30C5FF;
+        font-family: 'roboto', sans-serif;
+    }
+    .submitbtn {
+        margin: 10px 0;
+        background: #30C5FF;
+        color: #fff;
+        border: none;
+    }
+    .submitbtn:hover {
+        background: #05386B;
+    }
+    .reserve-image {
+        grid-column: 2/7;
+    }
+    .reserve-image img {
+        width: 100%;
+        height: 650px;
+        border-radius: 360px;
+        opacity: 0.8;
+        margin-left: -30px;
+    }
+    .main-service-area img {
+        width: 100px;
+        height: 100px;
+    }
+    .main-service-area {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 7px;
+        padding: 10px;
+    }
+    .amenities {
+        display: block;
+        grid-column: 1;
+        background: #fff;
+        border-radius: 5px;
+        color: #011627;
+        padding: 10px;
+        text-align: center;
+    }
+    .amenities ul {
+        text-align: left;
+        line-height: 1.7em;
+    }
+    .amenities img {
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+    }
+    .reception {
+        grid-column: 2;
+        padding: 10px;
+        background: #333;
+        border-radius: 5px;
+        color: orange;
+        grid-row: 2;
+        text-align: center;
+    }
+    .reception ul {
+        text-align: left;
+        color: #fff;
+        line-height: 1.7em;
+        list-style: circle;
+    }
+    .reception img {
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+        padding: 5px;
+        ;
+    }
+    .fttm {
+        grid-column: 3;
+        padding: 10px;
+        background: #05386B;
+        border-radius: 5px;
+        color: orange;
+    }
+    .fttm img {
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .fttm ul {
+        line-height: 1.7em;
+        text-align: left;
+        color: #fff;
+    }
+    .fttm .contact-form {
+        padding: 10px;
+    }
+    .fttm .contact-form input {
+        display: block;
+        padding: 6px;
+        border: none;
+        border-radius: 7px;
+    }
+    fieldset {
+        padding: 5px;
+    }
+    .contact-form label {
+        margin-top: 10px;
     }
 }

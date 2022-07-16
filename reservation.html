@@ -36,50 +36,56 @@
                     <h2><span class="light">Temple </span> Inn & Suites</h2>
                 </div>
                 <ul class="navul">
-                    <li><a href="index.html" class="current-page">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="temple.html">Temple</a></li>
-                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="reservation.html" class="current-page">Reservation</a></li>
                     <li><a href="services.html">Services</a></li>
                 </ul>
             </nav>
         </header>
-        <main>
-            <section class="bg-image">
-                <picture class="bg-image1">
-                    <source media="(min-width: 1000px)" srcset="img/large.jpg" 1x>
-                    <source media="(min-width: 550px)" srcset="img/imgC.jpg" 1x>
-                    <img src="img/imgC.jpg" alt="my-image">
-                </picture>
-                <a href="#" class="btn"><span class="light">Book</span>Now</a>
-            </section>
-            <section class="showcase-content">
-                <div class="showcaseimg">
-                    <img src="https://assets.ldscdn.org/e8/81/e88192665112ce3930cb4601bda1c716f0b9126a/portland_oregon_temple.jpeg" alt="myimage">
-                </div>
-                <div class="showcase-desc">
-                    <h1><span class="light">PortLand </span> Oregon Temple</h1>
-                    <h3>Temple Closures</h3>
-                    <ul>
-                        <h3><span class="light">2022</span></h3>
-                        <li>Monday, 18 july 2022-Monday, 15 August 2022</li>
-                        <li>Saturday, 1 October 2022</li>
-                        <li>Wednesday, 23 November 2022 (Limited Operations)</li>
-                    </ul>
-                    <h2><span class="light">Contact </span> or Find Us</h2>
-                    <p>Adress: 13600 Kruse Oaks Blvd Lake Oswego OR 97035-8602 United States</p>
-                    <p>Telephone: (1) 503-639-7066</p>
-                </div>
-                <div class="current-weather-card">
-                    <h2>Weather Status in Bethesda</h2>
-                    <p class="current-temp"></p>
-                    <figure>
-                        <img src="" alt="" id="weather-icon" />
-                        <figcaption></figcaption>
-                    </figure>
-                    <p class="humidity"></p>
-                    <p class="weather-desc"></p>
-                </div>
-            </section>
+        <main class="main-reserve">
+            <div class="form-area">
+                <form class="reserve-form">
+                    <label for="location">
+              <label for="location">Location*</label>
+                    <input type="text" name="location" id="location" placeholder="Enter Location" required>
+                    </label>
+                    <label for="date">
+              <label for="date">Date*</label>
+                    <input type="date" name="date" id="date" required>
+                    </label>
+                    <label for="number" class="roomtype">
+              <label for="number" class="label">Number and Type of room*</label>
+                    <input type="number" name="number" id="number" required>
+                    <label for="roomtype">
+                <input type="text" name="roomtype" id="roomtype" placeholder="Enter Room Type"required>
+              </label>
+                    </label>
+                    <label for="fullname">
+              <label for="fullname">Full Name*</label>
+                    <input type="text" name="fullname" id="fullname" placeholder="Enter full Name" required>
+                    </label>
+                    <label for="email">
+              <label for="email">Email*</label>
+                    <input type="email" name="email" id="email" placeholder="Enter Email" required>
+                    </label>
+                    <label for="phone">
+              <label for="phone">Phone Number*</label>
+                    <input type="text" name="phone" id="phone" placeholder="Enter Phone number" required>
+                    </label>
+                    <label for="home">
+              <label for="home">Home State/Country*</label>
+                    <input type="text" name="home" placeholder="Enter Home/country" id="home" required>
+                    <label for="acc">
+              <label for="acc">Home State/Country*</label>
+                    <textarea id="acc" placeholder="Accomodation comment"></textarea>
+                    </label>
+                    <input type="submit" value="Submit" class="submitbtn">
+                </form>
+            </div>
+            <div class="reserve-image">
+                <img src="./img/imgd.jpg" alt="">
+            </div>
         </main>
         <footer class="main-footer">
             <div class="footer">
