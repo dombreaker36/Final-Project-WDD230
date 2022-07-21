@@ -213,19 +213,15 @@ const displayResult = (temple)=>{
   // const likeDisplay = document.querySelector(".likeDisplay")
 
   let numlikes = Number(localStorage.getItem("like-ls"))
-  likeBtn.addEventListener('click', ()=>{
 
-    if(numlikes != 0){
-      display.textContent = numlikes;
-    }
-  
-    else {
-      display.textContent = "0"
-    }
-    numlikes++
+
+
+  likeBtn.addEventListener('click', ()=>{
+    numlikes ++
     localStorage.setItem('likes-ls', numlikes)
+    display.textContent = numlikes
   })
-  
+
 
 
   box1.appendChild(templeTitle)
@@ -249,5 +245,13 @@ function togglenav() {
 };
 
 button.onclick = togglenav;
+
+var today = new Date();
+var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+var today = new Date();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+document.querySelector('.current-date').innerHTML = ` Last Modification: ${date} ${time}`
+
 
 

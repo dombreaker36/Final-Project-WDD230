@@ -19,6 +19,52 @@
         max-width: 1960px;
     }
     /* Utility */
+    .resource {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 50px;
+        background: #fff;
+    }
+    .main-footer a {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+    .cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 10px;
+        max-width: 600px;
+        flex-direction: column;
+        background: #05386B;
+        color: #fff;
+        box-shadow: 10px 10px 5px #aaa;
+    }
+    .resource a {
+        text-decoration: none;
+        padding: 10px;
+        color: #fff;
+    }
+    .resource a:hover {
+        color: #9A031E;
+    }
+    .likebtn {
+        background: none;
+        border: none;
+        font-size: 20px;
+        padding: 10px;
+        color: #05386B;
+    }
+    .likebtn:hover {
+        color: #30C5FF;
+    }
     .hamburger {
         display: none;
     }

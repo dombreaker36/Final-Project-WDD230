@@ -20,6 +20,52 @@
         color: #30C5FF;
         font-family: 'Kurale', serif;
     }
+    .likebtn {
+        background: none;
+        border: none;
+        font-size: 20px;
+        padding: 10px;
+        color: #05386B;
+    }
+    .likebtn:hover {
+        color: #30C5FF;
+    }
+    .resource {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 50px;
+        background: #fff;
+    }
+    .cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 10px;
+        max-width: 600px;
+        flex-direction: column;
+        background: #05386B;
+        color: #fff;
+        box-shadow: 10px 10px 5px #aaa;
+    }
+    .main-footer a {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+    .resource a {
+        text-decoration: none;
+        padding: 10px;
+        color: #fff;
+    }
+    .resource a:hover {
+        color: #9A031E;
+    }
     /* First Head */
     .container {
         max-width: 960px;
@@ -68,7 +114,7 @@
         border-radius: 5px;
     }
     .bg-image img {
-        height: 100vh;
+        height: 400px;
         width: 97vw;
         opacity: 0.5;
     }
@@ -136,6 +182,7 @@
     }
     .footer {
         display: block;
+        text-align: center;
         padding: 10px;
     }
     .footer a {
