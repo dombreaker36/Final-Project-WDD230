@@ -117,7 +117,7 @@
     }
     .showcaseimg img {
         height: 500px;
-        width: 659px;
+        width: 100%;
     }
     .showcase-desc {
         background: #0f222a;
